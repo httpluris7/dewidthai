@@ -1,0 +1,31 @@
+{
+  "name": "muay-thai-club-lorqui",
+  "version": "1.0.0",
+  "description": "Sitio web oficial del Muay Thai Club Lorquí - Lorquí, Murcia",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server",
+    "dev": "npx http-server -p 8000",
+    "build": "echo 'Production build configured'"
+  },
+  "keywords": [
+    "muay-thai",
+    "club",
+    "lorqui",
+    "murcia",
+    "artes-marciales",
+    "tailandia"
+  ],
+  "author": "Muay Thai Club Lorquí",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/muay-thai-club.git"
+  },
+  "keywords": [
+    "muay-thai",
+    "club",
+    "lorqui",
+    "murcia"
+  ]
+}
