@@ -4,26 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Club de Muay Thai en Lorquí, Murcia - Entrenamiento de artes marciales tailandesas">
-    <title>Muay Thai Club Lorquí | Artes Marciales Tailandesas</title>
+    <title>DewidThai | Artes Marciales Tailandesas en Lorquí</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Thai Flag Accent Bar -->
+    <div class="thai-bar">
+        <div class="thai-stripe red"></div>
+        <div class="thai-stripe white"></div>
+        <div class="thai-stripe blue"></div>
+        <div class="thai-stripe white"></div>
+        <div class="thai-stripe red"></div>
+    </div>
+
     <!-- Navegación -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-logo">
-                <span class="flag-thailand">🇹🇭</span>
-                <span class="logo-text">Muay Thai Club</span>
-            </div>
+            <a href="#inicio" class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-fist-raised"></i>
+                </div>
+                <div class="logo-text-group">
+                    <span class="logo-text">DEWIDTHAI</span>
+                    <span class="logo-sub">LORQUÍ, MURCIA</span>
+                </div>
+            </a>
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="#sobre" class="nav-link">Nosotros</a></li>
+                <li><a href="#peleadores" class="nav-link">Peleadores</a></li>
                 <li><a href="#clases" class="nav-link">Clases</a></li>
                 <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#contacto" class="nav-link btn-nav">Contacto</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Menú" role="button" tabindex="0">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -33,52 +51,227 @@
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
+        <div class="hero-bg">
+            <div class="hero-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Muay_Thai_Championship_Boxing_-_Anthony_Cordero.jpg/1280px-Muay_Thai_Championship_Boxing_-_Anthony_Cordero.jpg');"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+            <div class="hero-glow"></div>
+        </div>
         <div class="hero-content">
-            <h1>Muay Thai Club</h1>
-            <p>Lorquí, Murcia</p>
-            <div class="flags">
-                <span class="flag-large">🇹🇭</span>
-                <span class="flag-large">🇪🇸</span>
+            <div class="hero-badge">
+                <span>🇹🇭</span> LORQUÍ, MURCIA <span>🇪🇸</span>
             </div>
-            <p class="tagline">El Arte de los Ocho Miembros</p>
-            <a href="#clases" class="btn-primary">Comienza Hoy</a>
+            <h1>
+                <span class="hero-line">DEWID</span>
+                <span class="hero-line accent">THAI</span>
+            </h1>
+            <p class="tagline">Club Privado de Muay Thai &mdash; El Arte de los Ocho Miembros</p>
+            <div class="hero-actions">
+                <a href="#clases" class="btn-primary">
+                    <span>Comienza Hoy</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#sobre" class="btn-secondary">
+                    <span>Conócenos</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="6">6</span>
+                    <span class="stat-label">Tipos de Clases</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">Pro</span>
+                    <span class="stat-label">Entrenadores</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">5-99</span>
+                    <span class="stat-label">Edades</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#sobre">
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                </div>
+            </a>
         </div>
     </section>
 
     <!-- Sobre Nosotros -->
     <section id="sobre" class="sobre">
         <div class="container">
-            <h2>Sobre Nosotros</h2>
+            <div class="section-header">
+                <span class="section-tag">Sobre Nosotros</span>
+                <h2>Club Privado en <span class="text-gradient">Lorquí</span></h2>
+            </div>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Bienvenido al <strong>Muay Thai Club Lorquí</strong>, tu destino para aprender el arte marcial tailandés más emocionante.
-                        Con entrenadores certificados y experiencia internacional, ofrecemos clases de alta calidad para todos los niveles.
+                        <strong>DewidThai</strong> no es un gimnasio convencional. Somos un <strong>club privado de Muay Thai</strong> en Lorquí, Murcia, donde cada miembro forma parte de una familia dedicada al arte marcial tailandés.
                     </p>
                     <p>
-                        <strong>Nuestro Objetivo:</strong> Enseñar disciplina, respeto y la técnica auténtica del Muay Thai.
+                        A diferencia de un gym al uso, aquí priorizamos la <strong>calidad sobre la cantidad</strong>: grupos reducidos, atención personalizada y un ambiente exclusivo donde se respira auténtica cultura del Muay Thai. Con entrenadores certificados y experiencia internacional, formamos luchadores de verdad.
                     </p>
-                    <div class="benefits">
-                        <div class="benefit-item">
-                            <i class="fas fa-heart"></i>
-                            <h3>Salud</h3>
-                            <p>Mejora cardiovascular y acondicionamiento físico</p>
+                    <p>
+                        <strong>Nuestro Objetivo:</strong> Enseñar disciplina, respeto y la técnica auténtica del Muay Thai en un entorno privado y profesional.
+                    </p>
+                    <div class="thai-divider">
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Muay_Thai_gloves.jpg/960px-Muay_Thai_gloves.jpg" alt="Guantes de Muay Thai" class="about-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-strip">
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Thairoundkick.jpg" alt="Patada de Muay Thai" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Osaka_Fight_Gear_Muay_Thai_Gloves.jpg/960px-Osaka_Fight_Gear_Muay_Thai_Gloves.jpg" alt="Guantes Muay Thai" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Womens_Muay_Thai.jpg" alt="Combate de Muay Thai" loading="lazy">
+                </div>
+            </div>
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3>Salud</h3>
+                    <p>Mejora cardiovascular y acondicionamiento físico completo</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Disciplina</h3>
+                    <p>Desarrollo mental, foco y control emocional</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Defensa</h3>
+                    <p>Técnicas efectivas de autodefensa personal</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Exclusividad</h3>
+                    <p>Club privado con grupos reducidos y trato familiar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peleadores -->
+    <section id="peleadores" class="peleadores">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestro Equipo</span>
+                <h2>Nuestros <span class="text-gradient">Peleadores</span></h2>
+            </div>
+            <div class="fighters-grid">
+                <div class="fighter-card">
+                    <div class="fighter-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Muay_Thai_Championship_Boxing_-_Kiall_Wright.jpg/960px-Muay_Thai_Championship_Boxing_-_Kiall_Wright.jpg" alt="Carlos 'El Trueno' Martínez" loading="lazy">
+                        <div class="fighter-overlay">
+                            <span class="fighter-weight">-72 kg</span>
                         </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-brain"></i>
-                            <h3>Disciplina</h3>
-                            <p>Desarrollo mental y control emocional</p>
-                        </div>
-                        <div class="benefit-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <h3>Defensa</h3>
-                            <p>Técnicas efectivas de autodefensa</p>
+                    </div>
+                    <div class="fighter-info">
+                        <h3>Carlos Martínez</h3>
+                        <span class="fighter-alias">"El Trueno"</span>
+                        <p class="fighter-record"><i class="fas fa-trophy"></i> 18V - 3D - 1E</p>
+                        <p class="fighter-desc">Especialista en clinch y rodillazos. Campeón regional de Muay Thai 2024 en categoría welter.</p>
+                        <div class="fighter-tags">
+                            <span>Welter</span>
+                            <span>Competición</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="placeholder-image">
-                        <i class="fas fa-fist-raised"></i>
+
+                <div class="fighter-card">
+                    <div class="fighter-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Saenchai.jpg/960px-Saenchai.jpg" alt="Miguel 'Cobra' López" loading="lazy">
+                        <div class="fighter-overlay">
+                            <span class="fighter-weight">-67 kg</span>
+                        </div>
+                    </div>
+                    <div class="fighter-info">
+                        <h3>Miguel López</h3>
+                        <span class="fighter-alias">"Cobra"</span>
+                        <p class="fighter-record"><i class="fas fa-trophy"></i> 24V - 5D - 0E</p>
+                        <p class="fighter-desc">Técnica depurada con un juego de piernas excepcional. Referente del club con más de 8 años de experiencia.</p>
+                        <div class="fighter-tags">
+                            <span>Ligero</span>
+                            <span>Veterano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fighter-card">
+                    <div class="fighter-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Wai_Kru_Ott_%C3%89va_Szilvia.jpg/960px-Wai_Kru_Ott_%C3%89va_Szilvia.jpg" alt="Laura 'La Fiera' Navarro" loading="lazy">
+                        <div class="fighter-overlay">
+                            <span class="fighter-weight">-54 kg</span>
+                        </div>
+                    </div>
+                    <div class="fighter-info">
+                        <h3>Laura Navarro</h3>
+                        <span class="fighter-alias">"La Fiera"</span>
+                        <p class="fighter-record"><i class="fas fa-trophy"></i> 12V - 2D - 0E</p>
+                        <p class="fighter-desc">Agresiva y técnica. Doble campeona autonómica femenina y promesa del Muay Thai nacional.</p>
+                        <div class="fighter-tags">
+                            <span>Gallo</span>
+                            <span>Campeona</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fighter-card">
+                    <div class="fighter-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/SaenchaiSorKingstar.jpg/960px-SaenchaiSorKingstar.jpg" alt="Alejandro 'Tormenta' García" loading="lazy">
+                        <div class="fighter-overlay">
+                            <span class="fighter-weight">-81 kg</span>
+                        </div>
+                    </div>
+                    <div class="fighter-info">
+                        <h3>Alejandro García</h3>
+                        <span class="fighter-alias">"Tormenta"</span>
+                        <p class="fighter-record"><i class="fas fa-trophy"></i> 9V - 1D - 2E</p>
+                        <p class="fighter-desc">Potencia pura con patadas devastadoras. Su low kick es temido en todo el circuito amateur del sureste.</p>
+                        <div class="fighter-tags">
+                            <span>Medio</span>
+                            <span>KO Artist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fighter-card">
+                    <div class="fighter-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Womens_Muay_Thai_teep.jpg/960px-Womens_Muay_Thai_teep.jpg" alt="Sofía 'Relámpago' Torres" loading="lazy">
+                        <div class="fighter-overlay">
+                            <span class="fighter-weight">-60 kg</span>
+                        </div>
+                    </div>
+                    <div class="fighter-info">
+                        <h3>Sofía Torres</h3>
+                        <span class="fighter-alias">"Relámpago"</span>
+                        <p class="fighter-record"><i class="fas fa-trophy"></i> 7V - 1D - 0E</p>
+                        <p class="fighter-desc">Velocidad y precisión en cada golpe. Joven promesa con un futuro brillante en la competición femenina.</p>
+                        <div class="fighter-tags">
+                            <span>Pluma</span>
+                            <span>Promesa</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,66 +281,94 @@
     <!-- Clases -->
     <section id="clases" class="clases">
         <div class="container">
-            <h2>Nuestras Clases</h2>
+            <div class="section-header">
+                <span class="section-tag">Programas</span>
+                <h2>Nuestras <span class="text-gradient">Clases</span></h2>
+            </div>
             <div class="clases-grid">
                 <div class="clase-card">
+                    <div class="card-accent"></div>
                     <div class="clase-icon">
                         <i class="fas fa-child"></i>
                     </div>
                     <h3>Mini Fighters</h3>
-                    <p><strong>Edad:</strong> 5-8 años</p>
-                    <p>Introducción lúdica al Muay Thai con enfoque en coordinación y diversión.</p>
-                    <p class="schedule"><strong>Horario:</strong> Martes y Jueves 16:00</p>
+                    <p class="card-age"><i class="fas fa-birthday-cake"></i> 5-8 años</p>
+                    <p class="card-desc">Introducción lúdica al Muay Thai con enfoque en coordinación y diversión.</p>
+                    <div class="card-schedule">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Martes y Jueves 16:00</span>
+                    </div>
                 </div>
 
                 <div class="clase-card">
+                    <div class="card-accent"></div>
                     <div class="clase-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>Jóvenes</h3>
-                    <p><strong>Edad:</strong> 9-15 años</p>
-                    <p>Técnica fundamental con énfasis en disciplina y respeto hacia el arte.</p>
-                    <p class="schedule"><strong>Horario:</strong> Lunes y Miércoles 17:00</p>
+                    <p class="card-age"><i class="fas fa-birthday-cake"></i> 9-15 años</p>
+                    <p class="card-desc">Técnica fundamental con énfasis en disciplina y respeto hacia el arte.</p>
+                    <div class="card-schedule">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Lunes y Miércoles 17:00</span>
+                    </div>
                 </div>
 
                 <div class="clase-card">
+                    <div class="card-accent"></div>
                     <div class="clase-icon">
                         <i class="fas fa-dumbbell"></i>
                     </div>
                     <h3>Adultos Principiantes</h3>
-                    <p><strong>Edad:</strong> 16+ años</p>
-                    <p>Aprende desde cero en un ambiente acogedor y sin presión.</p>
-                    <p class="schedule"><strong>Horario:</strong> Lunes, Miércoles y Viernes 19:00</p>
+                    <p class="card-age"><i class="fas fa-user"></i> 16+ años</p>
+                    <p class="card-desc">Aprende desde cero en un ambiente acogedor y sin presión.</p>
+                    <div class="card-schedule">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Lun, Mié y Vie 19:00</span>
+                    </div>
                 </div>
 
-                <div class="clase-card">
+                <div class="clase-card featured">
+                    <div class="card-accent"></div>
+                    <div class="card-badge">Popular</div>
                     <div class="clase-icon">
                         <i class="fas fa-crown"></i>
                     </div>
                     <h3>Adultos Avanzados</h3>
-                    <p><strong>Experiencia:</strong> Intermedios +</p>
-                    <p>Técnicas avanzadas, sparring y preparación para competición.</p>
-                    <p class="schedule"><strong>Horario:</strong> Martes, Jueves y Sábados 19:30</p>
+                    <p class="card-age"><i class="fas fa-medal"></i> Intermedios +</p>
+                    <p class="card-desc">Técnicas avanzadas, sparring y preparación para competición.</p>
+                    <div class="card-schedule">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Mar, Jue y Sáb 19:30</span>
+                    </div>
                 </div>
 
                 <div class="clase-card">
+                    <div class="card-accent"></div>
                     <div class="clase-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Fitness Muay Thai</h3>
-                    <p><strong>Público General</strong></p>
-                    <p>Entrena como un luchador con técnicas de Muay Thai en una clase de fitness.</p>
-                    <p class="schedule"><strong>Horario:</strong> Sábados 10:00</p>
+                    <p class="card-age"><i class="fas fa-fire"></i> Público General</p>
+                    <p class="card-desc">Entrena como un luchador con técnicas de Muay Thai en una clase fitness.</p>
+                    <div class="card-schedule">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Sábados 10:00</span>
+                    </div>
                 </div>
 
                 <div class="clase-card">
+                    <div class="card-accent"></div>
                     <div class="clase-icon">
-                        <i class="fas fa-ring"></i>
+                        <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>Clases Privadas</h3>
-                    <p><strong>Personalizado</strong></p>
-                    <p>Entrenamiento personalizado con nuestros entrenadores certificados.</p>
-                    <p class="schedule"><strong>Horario:</strong> Previa coordinación</p>
+                    <p class="card-age"><i class="fas fa-star"></i> Personalizado</p>
+                    <p class="card-desc">Entrenamiento personalizado con nuestros entrenadores certificados.</p>
+                    <div class="card-schedule">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Previa coordinación</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -156,35 +377,46 @@
     <!-- Ubicación -->
     <section id="ubicacion" class="ubicacion">
         <div class="container">
-            <h2>Ubicación</h2>
+            <div class="section-header">
+                <span class="section-tag">Encuéntranos</span>
+                <h2>Nuestra <span class="text-gradient">Ubicación</span></h2>
+            </div>
             <div class="ubicacion-content">
                 <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.8293577844506!2d-1.3647!3d37.9333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6428e7e7e7e7e7d%3A0x0!2sLorqu%C3%AD%2C%20Murcia!5e0!3m2!1ses!2ses!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.8293577844506!2d-1.3647!3d37.9333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6428e7e7e7e7e7d%3A0x0!2sLorqu%C3%AD%2C%20Murcia!5e0!3m2!1ses!2ses!4v1234567890" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="info-ubicacion">
                     <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
                         <div>
                             <h3>Dirección</h3>
                             <p>Centro Deportivo Municipal<br>Lorquí, Murcia, España</p>
                         </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-phone"></i>
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
                         <div>
                             <h3>Teléfono</h3>
                             <p>+34 968 XX XX XX</p>
                         </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-envelope"></i>
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
                         <div>
                             <h3>Email</h3>
                             <p>info@muaythaillorqui.com</p>
                         </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-clock"></i>
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
                         <div>
                             <h3>Horario</h3>
                             <p>Lunes a Sábados<br>16:00 - 21:00</p>
@@ -198,26 +430,69 @@
     <!-- Contacto -->
     <section id="contacto" class="contacto">
         <div class="container">
-            <h2>Contacto</h2>
-            <form class="formulario-contacto" id="contactForm">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+            <div class="section-header">
+                <span class="section-tag">Escríbenos</span>
+                <h2>Ponte en <span class="text-gradient">Contacto</span></h2>
+            </div>
+            <div class="contacto-layout">
+                <div class="contacto-info">
+                    <h3>¿Listo para unirte al club?</h3>
+                    <p>DewidThai es un club privado. Contáctanos para conocernos, visitar nuestras instalaciones y encontrar el grupo que mejor se adapte a ti.</p>
+                    <div class="contacto-features">
+                        <div class="contacto-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Club privado, no un gimnasio</span>
+                        </div>
+                        <div class="contacto-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sesión de prueba con cita previa</span>
+                        </div>
+                        <div class="contacto-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Grupos reducidos y exclusivos</span>
+                        </div>
+                        <div class="contacto-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Entrenadores certificados</span>
+                        </div>
+                    </div>
+                    <div class="contacto-social">
+                        <a href="#" class="social-btn" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-btn" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-btn" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono">
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Enviar Mensaje</button>
-            </form>
+                <form class="formulario-contacto" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -225,34 +500,64 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Muay Thai Club Lorquí</h3>
-                    <p>El arte marcial tailandés en Murcia</p>
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i class="fas fa-fist-raised"></i></div>
+                        <div class="logo-text-group">
+                            <span class="logo-text">DEWIDTHAI</span>
+                            <span class="logo-sub">LORQUÍ, MURCIA</span>
+                        </div>
+                    </div>
+                    <p>Club privado de Muay Thai en Lorquí, Murcia. Formando luchadores auténticos.</p>
                     <div class="social-links">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Links</h3>
+                    <h3>Navegación</h3>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#sobre">Sobre Nosotros</a></li>
                         <li><a href="#clases">Clases</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Síguenos</h3>
-                    <p>🇹🇭 Entrenamiento Tailandés Auténtico 🇹🇭</p>
+                    <h3>Clases</h3>
+                    <ul>
+                        <li><a href="#clases">Mini Fighters</a></li>
+                        <li><a href="#clases">Jóvenes</a></li>
+                        <li><a href="#clases">Adultos</a></li>
+                        <li><a href="#clases">Fitness</a></li>
+                        <li><a href="#clases">Privadas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-location-dot"></i> Lorquí, Murcia</li>
+                        <li><i class="fas fa-phone"></i> +34 968 XX XX XX</li>
+                        <li><i class="fas fa-envelope"></i> info@muaythaillorqui.com</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Muay Thai Club Lorquí. Todos los derechos reservados.</p>
+                <div class="thai-divider-small">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <p>&copy; 2026 DewidThai - Lorquí. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
